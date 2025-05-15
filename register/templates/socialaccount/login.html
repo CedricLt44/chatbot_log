@@ -1,0 +1,14 @@
+{% extends 'frontend/base.html' %}
+<!---->
+{% block content %}
+<div class="card flex items-center w-xl mx-auto mt-10 shadow-md rounded">
+  <h1 class="text-2xl font-bold mb-4">Connexion</h1>
+  <p class="mb-6">
+    Vous êtes sur le point de vous connecter avec votre compte.
+  </p>
+  <form method="post" action="">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary mb-6">Continuer</button>
+  </form>
+</div>
+{% endblock %}

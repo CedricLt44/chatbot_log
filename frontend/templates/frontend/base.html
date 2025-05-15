@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHATBOT</title>
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="{% static 'dist/styles.css' %}" />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white">
+    <div
+      class="navbar shadow-sm shadow-accent justify-between items-center bg-neutral-100"
+    >
+      <div class="flex space-x-2 justify-start">
+        <a
+          href="{% url 'register:login' %}"
+          class="btn btn-outline btn-secondary text-lg"
+          >LOGIN</a
+        >
+      </div>
+      <div class="flex-1 flex justify-center space-x-4">
+        <a href="{% url 'frontend:index' %}" class="btn btn-outline btn-info"
+          >HOME</a
+        >
+        <a href="{% url 'bot:bot' %}" class="btn btn-outline btn-info"
+          >CHATBOT</a
+        >
+      </div>
+
+      <div class="block justify-end space-x-2 ">
+        <a
+          class="text-3xl text-primary hover:text-accent cursor-pointer"
+          href="https://www.linkedin.com/in/cedric-le-tutour"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+
+        <a
+          class="text-3xl text-primary hover:text-accent cursor-pointer"
+          href="https://github.com/CedricLt44"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          class=" bx bx-cog text-3xl text-primary hover:text-accent cursor-pointer"
+          href="{% url 'admin:index' %}"
+        ></a>
+      </div>
+    </div>
+    <main class="m-9 py-8 px-8">
+      {% block content %}
+      <!-- emplacement des htmls des modules -->
+      {% endblock %}
+    </main>
+  </body>
+</html>

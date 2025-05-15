@@ -1,0 +1,37 @@
+{% extends 'frontend/base.html' %}
+<!-- charge les templates -->
+{% load static %}
+
+<!--  debut de la session login -->
+{% block content %}
+<header class="py-12 text-center">
+  <h1
+    class="flex justify-center mx-auto mb-8 text-3xl"
+    style="font-family: Oxygen Mono, monospace"
+  >
+    SE CONNECTER
+  </h1>
+
+  <!-- LIEN POUR S'INSCRIRE avec GOOGLE -->
+  <!-- charge le compte google -->
+  {% load socialaccount %}
+  <div class="flow-root">
+    <div>
+      <a href="{% provider_login_url 'google'%}">
+        <button class="btn btn-outline btn-success mt-4">
+          <i class="bx bxl-google"></i> Se connecter avec Google
+        </button>
+      </a>
+    </div>
+    <!-- LIEN POUR S'INSCRIRE avec github -->
+    <div>
+      <a href="{% provider_login_url 'github' %}">
+        <button class="btn btn-outline mt-4">
+          <i class="bx bxl-github"></i> Se connecter avec GitHub
+        </button>
+      </a>
+    </div>
+    <!-- LIEN POUR S'INSCRIRE avec linkedin -->
+  </div>
+</header>
+{% endblock content %}
