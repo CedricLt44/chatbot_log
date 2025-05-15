@@ -48,31 +48,53 @@ Guides pratiques de la douane
 
 ## 📁 Structure du projet (exemple)
 
-CHATBOT_LOG/
-├── bot/ # Back-end du bot
-├── chatbot_log/ # Config Django
-│ ├── settings.py
-│ └── urls.py
-├── env/ # Environnement virtuel
-├── frontend/ # Frontend et templates
-│ └── templates/
-│ └── frontend/
-│ ├── base.html
-│ └── index.html
-├── Nginx/ # Serveur web (distribution + proxy)
-├── register/ # Module d’authentification
-│ ├── templates/
-│ │ ├── register/login.html
-│ │ └── socialaccount/login.html
-│ ├── urls.py
-│ └── views.py
-├── static/ # Fichiers CSS/images
-│ ├── src/
-│ └── img/
-├── .env
-├── docker-compose.yml
-├── Dockerfile
-├── entrypoint.sh
-├── manage.py
-├── package.json
-└── requirements.txt
+- CHATBOT_LOG/
+    <!-- module de mon chatbot -->
+
+  - bot/
+  <!-- backend du projet -->
+  - chatbot_log/
+
+        - settings.py
+        - urls.py
+
+    <!-- l'environnement virtuel -->
+
+  - env/
+  <!-- Dossier de mes templates de base  -->
+  - frontend/
+
+        - templates/
+          - frontend/
+            - base.html
+            - index.html
+
+    <!-- serveur web pour la distribution et le trafic comme un proxy -->
+
+  - Nginx/
+  <!-- module de login via les réseaux sociaux -->
+  - register/
+
+    - templates/
+
+      - register/
+        - login.html
+      - socialaccount/
+        - login.html
+
+    - urls.py
+    - views.py
+
+<!-- fichier frontend tailwind styles.css -->
+
+    - static/
+      - src/
+      - img/
+
+- .env
+- docker-compose.yml
+- Dockerfile
+- entrypoint.sh
+- manage.py
+- package.json
+- requirements.txt
