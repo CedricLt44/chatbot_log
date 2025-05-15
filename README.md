@@ -49,7 +49,7 @@ Guides pratiques de la douane
 ## 📁 Structure du projet (exemple)
 
 - CHATBOT_LOG/
-    <!-- module de mon chatbot -->
+  <!-- module de mon chatbot -->
 
   - bot/
   <!-- backend du projet -->
@@ -75,26 +75,27 @@ Guides pratiques de la douane
   <!-- module de login via les réseaux sociaux -->
   - register/
 
-    - templates/
+        - templates/
 
-      - register/
-        - login.html
-      - socialaccount/
-        - login.html
+          - register/
+            - login.html
+          - socialaccount/
+            - login.html
 
-    - urls.py
-    - views.py
+        - urls.py
+        - views.py
 
-<!-- fichier frontend tailwind styles.css -->
+    <!-- fichier frontend tailwind styles.css -->
 
-    - static/
-      - src/
-      - img/
+  - static/
 
-- .env
-- docker-compose.yml
-- Dockerfile
-- entrypoint.sh
-- manage.py
-- package.json
-- requirements.txt
+    - src/
+    - img/
+
+  - .env
+  - docker-compose.yml
+  - Dockerfile
+  - entrypoint.sh
+  - manage.py
+  - package.json
+  - requirements.txt
