@@ -4,6 +4,72 @@
 <!---->
 {% block content %}
 <header class="py-5 text-center">
-  <h1 class="flex justify-center text-3xl">Chatbot logistique !</h1>
+  <h1 class="flex justify-center text-neutral text-3xl">
+    Chatbot logistique !
+  </h1>
 </header>
-{% endblock content %}
+
+  <!-- section historique -->
+<div class="drawer drawer-end">
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+    <label for="my-drawer" class="btn btn-outline btn-info drawer-button"
+      >Voir l'historique</label
+    >
+  </div>
+  <div class="drawer-side">
+    <label
+      for="my-drawer"
+      aria-label="close sidebar"
+      class="drawer-overlay"
+    ></label>
+    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+      <!-- Sidebar content here -->
+      <li><a>Question du jour</a></li>
+      <li><a>Question précédente</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- card du robot -->
+<div class="flex justify-center">
+  <div class="card shadow-base-300 shadow-xl">
+    <div class="card-body flex items-center">
+      <div class="chat chat-start flex items-center">
+        <img
+          src="{% static 'img/iconChatbot.svg' %}"
+          alt="Assistant IA"
+          class="inline-block mr-2"
+          style="width: 40px; height: 40px;"
+        />
+        <div class="chat-bubble bg-accent ">En quoi puis-je vous aider ?</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- zone de la question user -->
+<div class="flex justify-center mt-5">
+  <div class="card shadow-base-300 shadow-xl">
+    <div class="card-body flex items-center">
+      <div class="chat chat-end flex items-center">
+        <div class="chat-bubble w-[43rem] bg-white">
+          <textarea
+            class="textarea w-full bg-succes text-success-content"
+            placeholder="Ma question"
+          ></textarea>
+        </div>
+
+        <img
+          src="{% static 'img/iconUser.svg' %}"
+          alt="Assistant IA"
+          class="inline-block mr-2"
+          style="width: 40px; height: 40px;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+  {% endblock content %}
+</div>
