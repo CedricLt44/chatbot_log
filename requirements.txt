@@ -16,3 +16,11 @@ requests==2.32.3
 sqlparse==0.5.3
 tzdata==2025.2
 urllib3==2.4.0
+langchain==0.3.25
+langchain-community==0.3.24
+openai==1.78.1
+PyMuPDF==1.25.5
+sqlalchemy==2.0.41
+pandas==2.2.3
+pdfplumber==0.11.6
+sentence-transformers==4.1.0

@@ -1,0 +1,12 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "pgvector",
+      "Group": "Servers",
+      "Host": "pgvector-db",
+      "Port": 5432,
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    }
+  }
+}
