@@ -56,7 +56,7 @@ class Command(BaseCommand):
     help = "Indexe les fichiers PDF en base vectorielle"
 
     def handle(self, *args, **options):
-        pdf_dir = "F:/APPLICATION/chatbot_log/bot/doc_pdf"
+        pdf_dir = "bot/doc_pdf"
         print("Chargement et découpage des PDF...")
         all_chunks = load_and_split_pdfs(pdf_dir)
 

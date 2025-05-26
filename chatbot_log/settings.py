@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.github',  # provider GitHub
+    # pgvector
+    'pgvector',
 ]
 
 SITE_ID = 1  # Par défaut, cela correspond à localhost
