@@ -12,7 +12,7 @@ psycopg2-binary==2.9.10
 pycparser==2.22
 PyJWT==2.6.0
 python-dotenv==1.1.0
-requests==2.32.3
+requests==2.32.4
 sqlparse==0.5.3
 tzdata==2025.2
 urllib3==2.4.0
